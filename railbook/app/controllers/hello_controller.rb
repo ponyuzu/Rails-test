@@ -1,6 +1,5 @@
 class HelloController < ApplicationController
-  def view
-  	@msg = 'Hello World!'
-  	render 'hello/view'
+  def list
+  	@books = Book.all
   end
 end
